@@ -6,15 +6,13 @@ description: In my free time I enjoy bicycling, beekeeping, board games, stargaz
 nav: true
 nav_order: 2
 ---
-
 <!-- _pages/publications.md -->
 
-{% if site.search_enabled %}
-<input type="text" id="bibsearch" spellcheck="false" autocomplete="off" class="search bibsearch-form-input" placeholder="Type to filter">
-{% endif %}
+<!-- Bibsearch Feature -->
+
+
 
 <div class="publications">
 
 {% bibliography %}
-
 </div>
