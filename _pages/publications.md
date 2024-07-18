@@ -10,9 +10,6 @@ nav_order: 2
 
 <!-- Bibsearch Feature -->
 
-
-
-<div class="publications">
+{% include bib_search.liquid %}
 
 {% bibliography %}
-</div>
