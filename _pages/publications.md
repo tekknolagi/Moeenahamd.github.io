@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: hobbies
 permalink: /hobies/
 title: A Few Hobbies
 description: In my free time I enjoy bicycling, beekeeping, board games, stargazing, Super Smash Brothers, cooking, and ballroom dance. But I couldn't find pictures for those so here's some other stuff.
