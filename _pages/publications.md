@@ -11,7 +11,16 @@ nav_order: 2
 
 
 {% include bib_search.liquid %}
-<div class="publications">
 
 
-</div>
+ <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6 left-side">
+        <img src="https://via.placeholder.com/150" alt="Placeholder Image" style="max-width: 100%; height: auto;">
+      </div>
+      <div class="col-md-6 right-side">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet accumsan arcu, et euismod nisl. Cras luctus auctor erat.</p>
+      </div>
+    </div>
+  </div>
+
