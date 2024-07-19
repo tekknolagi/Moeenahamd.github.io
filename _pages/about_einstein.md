@@ -20,7 +20,7 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
         <textarea class="form-control" id="message" rows="5" placeholder="Your message"></textarea>
       </div>
       <div class="form-actions" style= " margin-top: 15px;">
-        <button type="submit" style="border-radius:5%;color:white;background-color:rgb(74,202,168}" class="btn ">Send Message</button>
+        <button type="submit" style="border-radius:5%;color:white;background-color:rgb(74,202,168)" class="btn ">Send Message</button>
         <button type="reset" style="border-radius:5%;color:white;" class="btn btn-secondary">Reset Form</button>
       </div>
     </form>
