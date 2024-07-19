@@ -9,7 +9,7 @@ nav_order: 4
 
 <div class="  align-items-center">
  
-    {% include repository/repo_user.liquid username=user %}
+    {% include repository/repo_user.liquid  %}
 
 </div>
 
