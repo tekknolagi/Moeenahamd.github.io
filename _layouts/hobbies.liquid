@@ -1,1 +1,15 @@
-
+{% for hobby in site.hobbies %}
+ <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6 left-side">
+        <img src="{{hobby.image_path}}" alt="Placeholder Image" style="max-width: 100%; height: auto;">
+      </div>
+      <div class="col-md-6 right-side">
+       <h1>{{hobby.title}}</h1>
+        <p>{{hobby.text}}</p>
+      </div>
+    </div>
+  <hr>
+ 
+  </div>
+{% endfor %}
