@@ -6,19 +6,19 @@ layout: default
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-description">{{ page.description }}</p>
   </header>
+{% for hobbies in page.publications %}
  <div class="container mt-5">
     <div class="row">
       <div class="col-md-6 left-side">
         <img src="https://via.placeholder.com/150" alt="Placeholder Image" style="max-width: 100%; height: auto;">
       </div>
       <div class="col-md-6 right-side">
-       <h1>Chess</h1>
-        <p> 
-I am a competitive chess player rated about 1900 USCF. In 2016 I placed second in the Virginia college state championship. If you'd like to play, send me a challenge!</p>
+       <h1>hobbies.title</h1>
+        <p>hobbies.paragraph</p>
       </div>
     </div>
   <hr>
-  
+  {% endfor %}   
   </div>
 
   <article>
