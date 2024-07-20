@@ -1,12 +1,12 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: This is my website. Content coming soon.
 
 profile:
   align: right
-  image: avatar.jpg
+  image: assets/img/avatar.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>I should think of something to write here</p>
