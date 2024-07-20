@@ -18,7 +18,7 @@ layout: default
        <h1>{{hobby.title}}</h1>
         <p>{{hobby.text}}</p>
         <a href="{{ hobby.link1_url }}">{{ hobby.link1_text }}</a>
-  <p>{{ hobby.text | replace: "send me a challenge", "<a href='{{ hobby.link1_url }}'>{{ hobby.link1_text }}</a>" }}</p>
+  <p> {{hobby.text}}<a href="{{ hobby.link1_url }}">{{ hobby.link1_text }}</a></p>
       </div>
     </div>
   <hr>
