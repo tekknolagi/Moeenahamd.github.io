@@ -1,6 +1,6 @@
 ---
 title: "Music"
-text: I play keyboard instruments and arrange music sometimes.
+text: I play keyboard instruments and 
 text2: Eventually I'll post a video of myself here, but for now, here's
 link1_text:  arrange music sometimes.
 link1_url: "[https://lichess.org/@/Aeilnrst](https://musescore.com/user/14818971)"
