@@ -19,8 +19,8 @@ layout: default
     {% if page.profile %}
       <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
         {% if page.profile.image %}
-  {% assign profile_image_path = page.profile.image %}
-                  {% if page.profile.image_circular %}
+  <img src="{{page.profile.image}}" alt="Placeholder Image" style="max-width: 100%; height: auto;">
+                      {% if page.profile.image_circular %}
             {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
           {% else %}
             {% assign profile_image_class = 'img-fluid z-depth-1
