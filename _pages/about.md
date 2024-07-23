@@ -3,7 +3,7 @@ layout: about
 title: About
 permalink: /
 subtitle: This is my website. Content coming soon.
-image: /assets/img/avatar.jpg
+image: "/assets/img/avatar.jpg"
 
 profile:
   align: right
