@@ -19,7 +19,7 @@ layout: default
     {% if page.profile %}
       <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
         {% if page.profile.image %}
-<img src="{{page.profile.image}}" alt="Placeholder Image" style="width: 231px; height: 308px; object-fit: cover;">
+<img src="{{page.profile.image}}" alt="Placeholder Image" class="rounded" style="width: 231px; height: 308px; object-fit: cover;">
 
                       {% if page.profile.image_circular %}
             {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
