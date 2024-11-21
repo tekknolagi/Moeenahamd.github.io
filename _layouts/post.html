@@ -2,92 +2,101 @@
 layout: default
 ---
 
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-
-  <header class="post-header">
-
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {{ page.date | date: date_format }}
-      </time>
-      {%- if page.last_modified_at -%}
-        ~ 
-        {%- assign mdate = page.last_modified_at | date_to_xmlschema -%}
-        <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
-          {{ mdate | date: date_format }}
-        </time>
-      {%- endif -%}
-      {%- if page.author -%}
-        • {% for author in page.author %}
-          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
-            {%- if forloop.last == false %}, {% endif -%}
-        {% endfor %}
-      {%- endif -%}
-    </p>
-
-  </header>
-
-  <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
-  </div>
-
-  <footer class="post-footer">
-    {% if page.categories.size > 0 %}
-      <div class="post-meta">
-        <i class="fas fa-folder"></i>
-        <ul class="post-taxonomies post-categories">
-          {% assign categories = page.categories | sort %}
-          {% for category in categories %}
-            <li class="post-category">
-              {% assign slugified_category = category | slugify %}
-              <a href="{{ '/categories/#:category' | replace: ':category', slugified_category | relative_url }}">{{ category }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-    {% endif %}
-
-    {% if page.tags.size > 0 %}
-      <div class="post-meta">
-        <i class="fas fa-tags"></i>
-        <ul class="post-taxonomies post-tags">
-          {% assign tags = page.tags | sort %}
-          {% for tag in tags %}
-            <li class="post-tag">
-              {% assign slugified_tag = tag | slugify %}
-              <a href="{{ '/tags/#:tag' | replace: ':tag', slugified_tag | relative_url }}">{{ slugified_tag }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-    {% endif %}
-
-    <nav class="post-pagination" role="navigation">
-      {% if page.previous %}
-        <a class="post-previous" href="{{ page.previous.url | relative_url }}">
-          <h4 class="post-pagination-label">Prev</h4>
-          <span class="post-pagination-title">
-            <i class="fas fa-arrow-left"></i> {{ page.previous.title | markdownify | strip_html }}
-          </span>
-        </a>
-      {% endif %}
-
-      {% if page.next %}
-        <a class="post-next" href="{{ page.next.url | relative_url }}">
-          <h4 class="post-pagination-label">Next</h4>
-          <span class="post-pagination-title">
-            {{ page.next.title | markdownify | strip_html }} <i class="fas fa-arrow-right"></i>
-          </span>
-        </a>
-      {% endif %}
-    </nav>
-  </footer>
-
-  {% if page.comments != false and jekyll.environment == "production" and site.disqus %}
-    {% include disqus.html %}
-  {% endif %}
+<!-- Main Container Wrapper -->
+<div class="container mx-auto w-5/6 sm:w-4/5 lg:w-9/12 lg:ps-6 ps-0">
+    <div class=" text-gray-200 p-8 md:flex md:justify-between md:space-x-12 lg:space-x-16">
+        <!-- Posts Section -->
+        <div class="md:flex-1">
+          <h2 class="text-md font-bold tracking-widest uppercase text-gray-200 mb-10 mt-14"> {{ page.title }}</h2>
+          
+          <!-- Post Card -->
+          <div class="space-y-8">
+            <!-- Individual Post -->
+            <div>
+              <p class="text-xs font-bold text-gray-200 tracking-widest">{{ page.date | date: "%B %d, %Y" | upcase  }}</p>
+              <p class="text-3xl font-small mt-1">{{ page.subtitle }} </p>
+              <p class="text-gray-300 mt-7">
+                {{ content }} </p>
+            </div>
   
-</article>
+            <!-- Additional posts can follow similar structure -->
+            <!-- Example Post -->
+            
+          </div>
+        </div>
+        
+        <!-- Sidebar Section -->
+        <div class=" md:mt-0 md:w-1/3 lg:w-1/4">
+            
+          <h2 class="text-sm font-bold tracking-wide uppercase text-gray-200 mb-4 mt-24">Stuff</h2>
+          <hr style="
+          border: 0;                     
+          border-top: 0.5px solid #4B5563; 
+          margin: 0.5rem 0;            
+          width: 100%;                
+        
+        ">
+          <div class="space-y-2">
+           
+          {% for stuff in site.data.main.stuffs %}
+          <a href="{{stuff.link}}" class="text-gray-200 hover:text-white ">{{stuff.name}}</a>
+          <br>
+          <hr style="
+            border: 0;                     
+            border-top: 0.5px solid #4B5563; 
+            margin: 0.5rem 0;            
+            width: 100%;                
+          
+          ">
+      {% endfor %}
+      </div>
+          <div class="relative my-6">
+            
+            <form class="max-w-lg mx-auto">
+                <div class="flex">
+                    <div class="relative w-full">
+                        <input type="search" id="search-dropdown" 
+                            class="block p-3 pb-4 w-full z-20 text-sm text-gray-900 bg-gray-700 rounded-e-lg border-s-gray-800 border-s-800 border border-gray-800 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-s-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500" 
+                            placeholder="Search..." required />
+                        <button type="submit" 
+                            class="absolute top-0 right-0 h-full py-0 px-4 text-sm font-medium text-gray-900 rounded-e-sm bg-white  hover:bg-gray-100  focus:border dark:bg-gray-700 dark:hover:bg-gray-700 ">
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                            </svg>
+                            <span class="sr-only">Search</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            
+
+        </div>
+        <h2 class="text-sm font-bold tracking-wide uppercase text-gray-400 mb-4">Archive</h2>
+        <hr style="
+        border: 0;                     
+        border-top: 0.5px solid #4B5563; 
+        margin: 0.5rem 0;            
+        width: 100%;                
+      
+      ">
+        <div class="space-y-2">
+         
+        {% for archive in site.data.main.archives %}
+        <a href="{{archive.link}}" class="text-gray-200 hover:text-white ">{{archive.name}}</a>
+        <br>
+        <hr style="
+        border: 0;                     
+        border-top: 0.5px solid #4B5563; 
+        margin: 0.5rem 0;            
+        width: 100%;                
+      
+      ">
+    {% endfor %}
+    </div>
+    
+        <!-- Archives Section -->
+        
+        </div>
+    </div>
+  </div>
+  

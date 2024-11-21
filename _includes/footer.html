@@ -1,24 +1,24 @@
-<div class="footer-col-wrapper">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+ 
 
-  <div class="footer-col">
-    <div class="copyright">
-      {% assign year_from = site.posts[-1].date | date: '%Y' %}
-      {% assign year_to   = site.time | date: '%Y' %}
-      {% if year_from == nil or year_from == year_to %}
-        {% assign year_string = year_from %}
-      {% else %}
-        {% assign year_string = year_from | append: '&nbsp;' | append: '-' | append: '&nbsp;' | append: year_to %}
-      {% endif %}
-      {% if site.author %}
-      <p>Copyright © {{ year_string }} {{ site.author }}; All rights reserved.</p>
-      {% endif %}
-    </div>
-    <p>
-      Powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://github.com/ngzhio/jekyll-theme-hamilton">Hamilton</a>
-    </p>
-  </div>
-
-  <div class="footer-col">
-    <p>{{ site.description | escape }}</p>
-  </div>
-</div>
+    <footer>
+       
+        <div class=" mx-auto  " style="border-top:0.5px solid  rgb(68,68,68)">
+            <div class="container mx-auto flex justify-center">
+            
+            <div class="w-5/6 sm:w-4/5 lg:w-9/12 py-10">
+            <p class="  text-sm font-semibold ">Proudly powered by WordPress</p>
+            </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
