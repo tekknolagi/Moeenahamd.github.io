@@ -1,36 +1,91 @@
-# Martin Saveski's Website
+# Example 01::Typical Blog
+This example site shows how the pagination gem can be used on a simple blog site. 
 
-## Updates guide
-Change one of the files in `_data`, unless you are changing the look of the website.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/sverrirs/jekyll-paginate-v2/master/examples/img/01-example-screenshot-main.png" />
+</p>
 
-Test changes with:
-```
-jekyll serve
-```
+The site is generated using the jekyll built in new command `jekyll new myblog` and it uses the [default `minima` theme](https://github.com/jekyll/minima).
 
-Push to the ML web directory:
+After generating the pagination gem was installed using
+
 ```
-rm -rf public_html
-mkdir public_html
-```
-```
-./__deploy.sh
+gem install jekyll-paginate-v2
 ```
 
-More info on the [Media Lab wiki](http://wiki.media.mit.edu/view/Necsys/WebPagePersonal).
+## Structure
+The blog has only one type of posts, blog posts. No category pagination is performed. To implement the pagination for the minima theme the `_layouts/home.html` needed to be modified to call the pagination logic.
 
-**Stanford links**
-- Use fetch!
-- [Basic WWW for Individual Users](https://uit.stanford.edu/service/web/centralhosting/howto_user)
-- [AFS File Transfer](https://uit.stanford.edu/service/afs/file-transfer/macintosh)
+The `_includes/header.html` was also overridden to omit listing the auto-generated pagination sites at the top of the header part.
+
+## Setup configuration
+
+The gem is added to the `_config.yml` file under
+``` yml
+gems:
+  - jekyll-paginate-v2
+```
+
+as well as to the `Gemfile` into the main loop
+``` ruby
+group :jekyll_plugins do
+  gem "jekyll-paginate-v2"
+  gem "jekyll-feed"
+end
+```
+
+At this point is is advisable to delete the `Gemfile.lock` file to clear out any potential issues with gem caching and dependency issues (no worries this file will be auto generated for you again).
+
+## Configuring the pagination
+
+Add the pagination configuration to `_config.yml`
+
+``` yml
+# Pagination Settings
+pagination:
+  enabled: true
+  per_page: 3
+  permalink: '/page/:num/'
+  title: ' - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+```
 
 
-## External Libraries
-- Framework: [Jekyll](http://jekyllrb.com/)
-- CSS
-  - [Skeleton](getskeleton.com)
-  - Tabs: [Skeleton Tabs](https://github.com/nathancahill/skeleton-tabs)
-  - Experience: [Timeline](https://codepen.io/NilsWe/pen/FemfK)
-  - Icons: [Font Awesome](http://fontawesome.io/)
-- JS
-  - [Jquery (3.1.1)](https://jquery.com/)
+Due to the way the entries in the blog utilize multiple categories it is also good to explicitly state the permalink format to avoid excessive nesting of the post pages. So place the following line into the `_config.yml` file as well
+
+``` yml
+# Produces a cleaner folder structure when using categories
+permalink: /:year/:month/:title.html
+```
+
+## Completing the setup
+Now the pagination simply needs to be enabled in the `index.html` file.
+
+``` yml
+---
+layout: home
+pagination: 
+  enabled: true
+---
+```
+
+That is it, no further configuration is needed!
+
+Try building the site yourself using `jekyll build` or `jekyll serve`.
+
+## Testing backwards compatability
+
+In the `_config.yml` file remove or comment out the new `pagination:` configuration and paste/uncomment the following configuration instead. 
+
+``` yml
+# Old jekyll-paginate pagination logic
+paginate: 3
+paginate_path: "/legacy/page:num/"
+```
+Now run `jekyll serve` again and the gem will generate the pagination according to the old jekyll-paginate rules and behavior.
+
+> You must disable the new pagination configuration for the old one to work. You cannot run both configurations at the same time.
+
+Cheers :heart:
