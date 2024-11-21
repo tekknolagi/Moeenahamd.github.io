@@ -1,5 +1,5 @@
 ---
-title: 
+title: Thesis
 layout: page
 blog_index: true
 permalink: blog/
