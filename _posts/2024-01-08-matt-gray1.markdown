@@ -1,0 +1,24 @@
+---
+layout: home
+title:  "Posts"
+date:   November 12, 2019
+subtitle: we become our choices
+---
+<p style="    transform: skew(-6deg); /* Adjust angle as needed */
+    display: inline-block;">
+"As water given sugar sweetens, given salt grows salty,
+<br>
+we become our choices.
+<br>
+Each yes, each no continues,”
+</p>
+<br>
+<b>
+– from Rebus, by Jane Hirshfield
+</b>
+<br><br>
+
+I’ve been on a poetry kick the last few days. It’s rhythms, its saturation, seep into the meaning of everything. I could become worse, I suppose, than reading poetry.
+
+<br>
+I discovered Hirshfield via <u>a blog on mathematics in poetry,</u> which I very much enjoyed. I then picked up Given Sugar, Given Salt, and everything in the collection (so far) has really resonated, Rebus included.
