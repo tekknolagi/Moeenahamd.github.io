@@ -40,7 +40,7 @@ thesis:
 # Thesis
 
 <ul>
-    {% for list in thesis %}
+    {% for list in page.thesis %}
     <li class="post-item">
         <a class="post-title" href="{{ list }}"><span>{{ list }}</span></a>
     </li>
