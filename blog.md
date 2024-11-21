@@ -14,9 +14,9 @@ permalink: blog/
     </li>
     {% endunless %}
     {% endfor %}
+    <li class="post-item">Thesis</li>
 </ul>
 
-Thesis
 - 11/21 Thursday - Day 1
 - 11/22 Friday - Day 2
 - 11/23 Saturday - Day 3
@@ -27,7 +27,7 @@ Thesis
 - 11/28 Thursday - Day 8
 - 11/29 Friday - Day 9
 - 11/30 Saturday - Day 10
-December
+- December
 - 12/1 Sunday - Day 11
 - 12/2 Monday - Day 12
 - 12/3 Tuesday - Day 13
