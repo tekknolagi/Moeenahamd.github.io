@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Bread
+title: Recipes
 description: A collection of bread ingredient ratios
 og_image: /assets/img/bread.jpg
 ---
