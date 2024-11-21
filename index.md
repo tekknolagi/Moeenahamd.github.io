@@ -5,6 +5,50 @@ layout: page
 
 <a rel="me" style="display:none;" href="https://mastodon.social/@tekknolagi">Mastodon</a>
 
+I'm Lydia Krifka-Dobes, an artist, sound designer, and technologist based in Berlin. I'm constantly exploring the intersections of identity, sound, and computation, imagining new ways to subvert and reshape reality through avant-garde practices.
+
+I write about experimental music, art-technology hybrids, and the poetics of code. *Collaborate with me! I'm always open to new projects and opportunities.*
+
+You can email me at opensourcereartwork@gmail.com if you want to discuss art, technology, identity, or anything in between. I'm happy to engage in mind-expanding conversations!
+
+I like making things that challenge perceptions and glitch expectations. Here are some of my favorite projects:
+
+* Wandering the Piano (Venice Biennale 2023), an AI-driven sound installation
+* Sonics of Languages, an ongoing project preserving endangered languages through spatial audio
+* Temperature Matters Research (2024-∞), exploring thermal phenomena as artistic medium
+* Identity.debug() Series (Continuous), a conceptual art project deconstructing privilege and identity
+
+I also enjoy creating smaller experiments and provocations, just to keep reality on its toes.
+
+I'm passionate about teaching and sharing knowledge. Some highlights:
+
+* Taught "Creative Coding for Sound" workshop series at HfMDD Berlin
+* Co-wrote "Deconstructing Identity in the Age of Algorithms" with Samir Tmajchi in 2022
+* Led "Hacking Reality 101" at Jugend Hackt Berlin in 2019
+
+I occasionally contribute to open-source projects at the intersection of art and technology, such as:
+
+* pd-l2ork: An extended version of Pure Data for multi-touch and embedded applications
+* SuperCollider: A platform for audio synthesis and algorithmic composition
+* Processing: A flexible software sketchbook for learning how to code within the context of the visual arts
+
+I enjoy writing as a way to explore ideas and document my process. Check out my latest blog post, "I Am Not a Feminist: Debugging Gender Through Glitch Art".
+
+I'm always eager to share my work and ideas with others. Recent talks and presentations include:
+
+* "Sonifying Privilege: Sound Art as Social Debugging" at ICLC 2024
+* "Deconstructing the Algorithmic Self" at Berlin Transmediale 2023
+* "Embracing the Glitch: Subverting Technology Through Art" at Dutch Design Week 2022
+
+Some random facts about me:
+
+* I once sonified my own brain waves for a 24-hour durational performance
+* I'm building an AI that generates avant-garde artworks (it's not very good yet)
+* I dream of turning the Berlin TV Tower into a giant sound installation one day
+* My favorite German word is "Haftpflichtversicherung" (liability insurance)
+
+
+
 # I'm Max Bernstein.
 
 I am a human and [programmer](https://github.com/tekknolagi). I like to read
