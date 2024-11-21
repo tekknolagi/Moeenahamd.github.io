@@ -5,7 +5,9 @@ layout: page
 
 <a rel="me" style="display:none;" href="https://mastodon.social/@tekknolagi">Mastodon</a>
 
-I'm Lydia Krifka-Dobes, an artist, sound designer, and technologist based in Berlin. I'm constantly exploring the intersections of identity, sound, and computation, imagining new ways to subvert and reshape reality through avant-garde practices.
+# I'm Lydia Krifka-Dobes.
+
+I'm an artist, sound designer, and technologist based in Berlin. I'm constantly exploring the intersections of identity, sound, and computation, imagining new ways to subvert and reshape reality through avant-garde practices.
 
 I write about experimental music, art-technology hybrids, and the poetics of code. *Collaborate with me! I'm always open to new projects and opportunities.*
 
