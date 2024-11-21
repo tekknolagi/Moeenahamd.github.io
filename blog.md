@@ -37,8 +37,6 @@ thesis:
     - 12/20 Friday - Day 30
 ---
 
-# Thesis
-
 <ul>
     {% for list in page.thesis %}
     <li class="post-item">
