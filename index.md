@@ -13,6 +13,8 @@ I write about experimental music, art-technology hybrids, and the poetics of cod
 
 You can email me at opensourcereartwork@gmail.com if you want to discuss art, technology, identity, or anything in between. I'm happy to engage in mind-expanding conversations!
 
+## I like making things. 
+
 I like making things that challenge perceptions and glitch expectations. Here are some of my favorite projects:
 
 * Wandering the Piano (Venice Biennale 2023), an AI-driven sound installation
@@ -22,11 +24,15 @@ I like making things that challenge perceptions and glitch expectations. Here ar
 
 I also enjoy creating smaller experiments and provocations, just to keep reality on its toes.
 
+## I like teaching.
+
 I'm passionate about teaching and sharing knowledge. Some highlights:
 
 * Taught "Creative Coding for Sound" workshop series at HfMDD Berlin
 * Co-wrote "Deconstructing Identity in the Age of Algorithms" with Samir Tmajchi in 2022
 * Led "Hacking Reality 101" at Jugend Hackt Berlin in 2019
+
+## Sometimes I contribute to open source projects.
 
 I occasionally contribute to open-source projects at the intersection of art and technology, such as:
 
@@ -34,13 +40,19 @@ I occasionally contribute to open-source projects at the intersection of art and
 * SuperCollider: A platform for audio synthesis and algorithmic composition
 * Processing: A flexible software sketchbook for learning how to code within the context of the visual arts
 
+## I like writing.
+
 I enjoy writing as a way to explore ideas and document my process. Check out my latest blog post, "I Am Not a Feminist: Debugging Gender Through Glitch Art".
+
+## I will happily talk in front of people.
 
 I'm always eager to share my work and ideas with others. Recent talks and presentations include:
 
 * "Sonifying Privilege: Sound Art as Social Debugging" at ICLC 2024
 * "Deconstructing the Algorithmic Self" at Berlin Transmediale 2023
 * "Embracing the Glitch: Subverting Technology Through Art" at Dutch Design Week 2022
+
+## I have some fun facts.
 
 Some random facts about me:
 
