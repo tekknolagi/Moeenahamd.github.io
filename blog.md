@@ -19,11 +19,17 @@ permalink: blog/
 ## Thesis
 
 11/21 Thursday - Day 1
+
 11/22 Friday - Day 2
+
 11/23 Saturday - Day 3
+
 11/24 Sunday - Day 4
+
 11/25 Monday - Day 5
+
 11/26 Tuesday - Day 6
+
 11/27 Wednesday - Day 7
 11/28 Thursday - Day 8
 11/29 Friday - Day 9
