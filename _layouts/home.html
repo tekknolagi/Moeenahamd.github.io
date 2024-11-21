@@ -36,7 +36,7 @@ title: home
             
             <!-- Post Cards Loop -->
             <div class="space-y-8">
-                {% for post in site.posts %}
+                {% for post in paginator.posts %}
                 <div class="mb-24">
                     <p class="text-xs font-bold  tracking-widest">{{ post.date | date: "%B %d, %Y" | upcase  }}</p>
                     <p class="text-3xl font-small mt-1">{{ post.subtitle }} </p>
