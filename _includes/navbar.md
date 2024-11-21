@@ -1,7 +1,8 @@
 <div class="navbar">
   <a href="/">home</a>
+  <a href="/blog/">blog</a>
   <a href="/thesis/">thesis</a>
-  <a href="/projects/">projects</a>
+  <a href="/books/">books</a>
   <a href="/research/">research</a>
   <a href="/teaching/">teaching</a>
   <a href="/resources/">resources</a>
