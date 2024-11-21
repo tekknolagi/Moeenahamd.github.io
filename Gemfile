@@ -1,4 +1,8 @@
-# frozen_string_literal: true
+source 'https://rubygems.org'
 
-source "https://rubygems.org"
-gemspec
+group :jekyll_plugins do
+  gem 'kramdown'
+  gem 'rouge'
+  gem 'github-pages'
+  gem 'webrick'
+end

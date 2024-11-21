@@ -1,57 +1,36 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing these this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Paginate Example - 01 Typical Blog
-email: jekyll@sverrirs.com
-description: > # this means to ignore newlines until "baseurl:"
-  Shows how the jekyll-paginate-v2 gem can be used on a typical blog created in Jekyll.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  sverrirs
+title: Lydia Krifka-Dobes
+# Site's name
+name: Lydia Krifka-Dobes' Blog
+author: Lydia Krifka-Dobes
+email: oiooiioo@tuta.io
+description: "sound + code + research"
+baseurl: ""
+url: "https://austinbostonberlin.github.io"
+
+exclude: [vendor]
+# TODO(max): Use pagefind (pagefind --source . --root-selector .container) but
+# avoid scanning _site somehow.
+include: [.well-known]
+
+future: false
+
+repo:
+    repository_url: https://github.com/austinbostonberlin/austinbostonberlin.github.io
+    branch: main
+
+permalink: '/blog/:title/'
+post_dirs: false
 
 # Build settings
 markdown: kramdown
-theme: minima
-gems:
-  - jekyll-paginate-v2
-exclude:
-  - Gemfile
-  - Gemfile.lock
+kramdown:
+    input: GFM # GitHub Flavored Markdown
+    hard_wrap: false
+highlighter: rouge
 
-# Produces a cleaner folder structure when using categories
-permalink: /:year/:month/:title.html
-
-# Explicitly turn off the old code
-paginate: nil
-paginate_path: nil
-
-# Pagination Settings
-pagination:
-  enabled: true
-  per_page: 3
-  offset: 2
-  permalink: '/page/:num/'
-  title: ':title - page :num of :max'
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
-  
-############################################################
-# Old jekyll-paginate pagination logic
-#   Uncomment thew two entries below to demonstrate how this new gem
-#   retains backwards compatibility with the old pagination logic 
-#   AS OF JANUARY 2018 this code does not work anymore!
-#paginate: 3
-#paginate_path: "/legacy/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - rouge
